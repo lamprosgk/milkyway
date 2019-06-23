@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_milky_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.detail.MilkyDetailActivity"
+        android:padding="16dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/milkyDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MilkyTextStyle.Title"
+                tools:text="Title"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/milkyDetailCenterLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/milkyDetailTitle"
+                android:layout_marginTop="16dp"
+                style="@style/MilkyTextStyle.Label.Black"
+                android:text="@string/milky_detail_label_center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/milkyDetailCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/milkyDetailCenterLabel"
+                android:layout_alignBottom="@id/milkyDetailCenterLabel"
+                style="@style/MilkyTextStyle.Normal.Black"
+                tools:text="Yoyo"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/milkyDetailDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/milkyDetailCenterLabel"
+                style="@style/MilkyTextStyle.Label.Black"
+                android:layout_marginTop="16dp"
+                android:text="@string/milky_detail_label_date"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/milkyDetailDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/milkyDetailDateLabel"
+                android:layout_alignBottom="@id/milkyDetailDateLabel"
+                style="@style/MilkyTextStyle.Normal.Black"
+                tools:text="2017"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/milkyDetailDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/milkyDetailDateLabel"
+                android:layout_marginTop="16dp"
+                style="@style/MilkyTextStyle.Normal.Black"
+                tools:text="milkyDetailDescription"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

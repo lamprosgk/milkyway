@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/milkyImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_image_height"
+            android:layout_centerVertical="true"
+            android:background="@android:color/darker_gray"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/milkyTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MilkyTextStyle.Label.White"
+            android:layout_above="@id/milkyCenterTextView"
+            android:layout_alignStart="@id/milkyCenterTextView"
+            android:layout_marginEnd="16dp"
+            tools:text="A monster in the Milky Way"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/milkyCenterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MilkyTextStyle.Small.White"
+            android:layout_alignBottom="@id/milkyImageView"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textAllCaps="true"
+            tools:text="Yoyo Center" />
+
+    <View android:id="@+id/separator"
+          android:layout_width="1dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/white"
+          android:layout_toEndOf="@id/milkyCenterTextView"
+          android:layout_alignBottom="@id/milkyCenterTextView"
+          android:layout_alignTop="@id/milkyCenterTextView"
+          android:layout_marginTop="2dp"
+          android:layout_marginBottom="2dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/milkyDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/separator"
+            style="@style/MilkyTextStyle.Small.White"
+            android:layout_alignBottom="@id/milkyImageView"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            tools:text="5/5/2015"/>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Milky Way</string>
+    <string name="title_activity_milky_detail">MilkyDetailActivity</string>
+    <string name="milky_detail_label_center">Center:</string>
+    <string name="milky_detail_label_date">Date:</string>
+    <string name="toolbar_title">The Milky Way</string>
+    <string name="message_loading">Loading…</string>
+    <string name="message_error_generic">An error occurred. Please swipe down to try again.</string>
+    <string name="message_error_connection">Seems like you may not have an internet connection.\nPlease check your connection and swipe down to try again.</string>
+</resources>
