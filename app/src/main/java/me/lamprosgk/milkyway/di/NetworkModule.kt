@@ -50,6 +50,6 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun provideCreditReportService(retrofit: Retrofit): NasaService =
+    fun provideNasaService(retrofit: Retrofit): NasaService =
         retrofit.create(NasaService::class.java)
 }
